@@ -31,9 +31,9 @@ int main()
     cout<<"ENTER THE KEY TO BE SEARCHED"<<endl;
     cin>>key;
     int result = linearsearch(arr,n,key);
-    if(result>0)
-        cout<<"PRESENT\t"<<comparison<<endl;
-    else
+    if(result<0)
         cout<<"NOT PRESENT\t"<<comparison<<endl;
+    else
+        cout<<"PRESENT\t"<<comparison<<endl;
 
 }
